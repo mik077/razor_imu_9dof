@@ -49,4 +49,15 @@ target_link_libraries(razor_imu_9dof
 )
 add_dependencies(razor_imu_9dof razor_imu_9dof_gencpp)
 
+#############
+## Install ##
+#############
+
+## Mark executables and/or libraries for installation
+install(TARGETS razor_imu_9dof
+  ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
+  RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 
